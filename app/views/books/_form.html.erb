@@ -19,10 +19,10 @@
     <%= form.text_field :author %>
 
     <%= form.label :price, style: "display: block" %>
-    <%= form.text_field :price %>
+    <%= form.number_field :price, step: 0.01 %>
 
     <%= form.label :published, style: "display: block" %>
-    <%= form.text_field :published %>
+    <%= form.date_field :published %>
   </div>
 
   <div>
