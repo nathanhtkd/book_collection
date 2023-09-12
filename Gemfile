@@ -45,6 +45,7 @@ gem 'yaml_db'
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 gem 'rexml'
+gem 'erb-formatter'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
