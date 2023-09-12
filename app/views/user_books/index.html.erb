@@ -20,7 +20,7 @@
         <td><%= link_to 'Edit', edit_user_book_path(user_book) %></td>
         <td><%= link_to 'Destroy', user_book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-      <%= end %>
+      <% end %>
   </tbody>
 </table>
 
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'User index' users_path %>
+<%= link_to 'User index', users_path %>
