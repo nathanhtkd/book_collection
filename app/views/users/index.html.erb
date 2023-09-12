@@ -1,14 +1,31 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Users</h1>
-
+<h2>Username</h2>
 <div id="users">
-  <% @users.each do |user| %>
-    <%= render user %>
-    <p>
-      <%= link_to "Show this user", user %>
-    </p>
-  <% end %>
+  <table>
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td>
+            <%= render user %>
+          </td>
+          <td>
+            <%= link_to "Show", user %>
+          </td>
+          <td>
+            <%= link_to "Edit", edit_user_path(user) %>
+          </td>
+          <td>
+            <%= button_to "Destroy", @user, method: :delete %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 </div>
 
 <%= link_to "New user", new_user_path %>
+
+<br>
+<%= link_to "Home", user_books_path %>
